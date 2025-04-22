@@ -60,3 +60,5 @@ Enable the Debug mode in the app’s settings to show logs and additional diagno
 Built with  using SwiftUI and AppKit.
 
 ---
+
+### The name and app icon are rather bad, if anyone has something better, let me know.
