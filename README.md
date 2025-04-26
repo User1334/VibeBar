@@ -36,7 +36,7 @@ Here's how your presence will appear in Discord:
 
 ###  Installation
 
-1. Download the latest `.app` file from [Releases](https://github.com/user1334/VibeBar/releases).
+1. Download the latest `.dmg` file from [Releases](https://github.com/user1334/VibeBar/releases).
 2. Move `VibeBar.app` to your `Applications` folder.
 3. Launch it — and grant automation permissions when prompted.
 4. That’s it. Your vibes are now live.
