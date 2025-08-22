@@ -56,8 +56,9 @@ macOS will prompt you to grant automation access so VibeBar can read playback in
 ### Dynamic Covers  
 
 If you enable dynamic album covers, VibeBar will check for the [loon](https://github.com/ungive/loon) proxy.  
-- If not found, you’ll be prompted to install it.  
-- Installation may require Homebrew or a direct Go-based build.
+- If *loon* is not bundled, you’ll be prompted to install it.  
+- Installation may require Homebrew or a direct Go-based build.  
+- VibeBar itself does **not** ship loon — it only provides a helper script that builds loon directly from its [official repository](https://github.com/ungive/loon) by **ungive**.  
 
 ---
 
