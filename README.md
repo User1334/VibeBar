@@ -30,7 +30,7 @@ Here's how your presence will appear in Discord:
 
 ###  Requirements
 
-- macOS 11.5+
+- macOS 11.0+
 - Apple Music app installed  
 - Local Discord running (web version not supported)  
 
