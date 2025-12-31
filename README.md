@@ -1,5 +1,8 @@
 # VibeBar
 
+[![Downloads](https://img.shields.io/github/downloads/User1334/VibeBar/total)](https://github.com/User1334/VibeBar/releases)
+[![Latest Release](https://img.shields.io/github/v/release/User1334/VibeBar)](https://github.com/User1334/VibeBar/releases/latest)
+
 **VibeBar** is a lightweight macOS menu bar application that brings your Apple Music activity to your Discord Rich Presence.
 
 No extra setup. No terminal scripts. Just launch, and your current track will appear in Discord.
