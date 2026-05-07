@@ -1,5 +1,5 @@
 VibeBar License Agreement
-Software Name: VibeBar Author: User1337 Version: 0.0.1 Date: 2025
+Software Name: VibeBar Author: User1337  Date: 2025
 
 Usage Rights: This software ("VibeBar") is provided free of charge for personal and non-commercial use. You are allowed to download, use, and share the unmodified version of the application.
 

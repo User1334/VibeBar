@@ -1,5 +1,8 @@
 # VibeBar
 
+[![Downloads](https://img.shields.io/github/downloads/User1334/VibeBar/total)](https://github.com/User1334/VibeBar/releases)
+[![Latest Release](https://img.shields.io/github/v/release/User1334/VibeBar)](https://github.com/User1334/VibeBar/releases/latest)
+
 **VibeBar** is a lightweight macOS menu bar application that brings your Apple Music activity to your Discord Rich Presence.
 
 No extra setup. No terminal scripts. Just launch, and your current track will appear in Discord.
@@ -21,16 +24,13 @@ No extra setup. No terminal scripts. Just launch, and your current track will ap
 
 Here's how your presence will appear in Discord:
 
-<!--![screenshot](https://github.com/user-attachments/assets/a6b260cb-be8c-4a59-ab63-1d61d0bfcb7a)-->
-
 <img width="296" height="128" alt="VibeBar" src="https://github.com/user-attachments/assets/d7a92fe9-31ca-4c9e-b81d-f5afc6ec76a9" />
-
 
 ---
 
 ###  Requirements
 
-- macOS 12.4+  
+- macOS 11.0+
 - Apple Music app installed  
 - Local Discord running (web version not supported)  
 
@@ -56,9 +56,10 @@ macOS will prompt you to grant automation access so VibeBar can read playback in
 ### Dynamic Covers  
 
 If you enable dynamic album covers, VibeBar will check for the [loon](https://github.com/ungive/loon) proxy.  
-- If *loon* is not bundled, you’ll be prompted to install it.  
-- Installation may require Homebrew or a direct Go-based build.  
-- VibeBar itself does **not** ship loon — it only provides a helper script that builds loon directly from its [official repository](https://github.com/ungive/loon) by **ungive**.  
+
+- *loon* is an optional external dependency and is **not bundled** with VibeBar.  
+- VibeBar only provides a helper script to build loon directly from its official repository by **ungive**.  
+- Installation may require Homebrew or a direct Go-based build.   
 
 ---
 
@@ -66,14 +67,7 @@ If you enable dynamic album covers, VibeBar will check for the [loon](https://gi
 
 VibeBar allows you to configure your own Discord Rich Presence details (images, hover texts, and buttons).  
 
-Here’s an example for the **Listening** presence type:  
-
- <!--<img width="440" height="154" alt="Bildschirmfoto 2025-08-21 um 21 21 21" src="https://github.com/user-attachments/assets/e0781693-34b1-4c58-891c-210fcca402e2" />-->
- <!--<img width="441" height="150" alt="Bildschirmfoto 2025-08-21 um 21 33 00" src="https://github.com/user-attachments/assets/b846da15-df26-45a3-bf2a-32fcbab767c3" />-->
- <img width="443" height="155" alt="Bildschirmfoto 2025-08-21 um 21 40 07" src="https://github.com/user-attachments/assets/d507e4fc-3b55-4dc1-9fec-97525ccd0b7a" />
-
-
-
+<img width="443" height="155" alt="Preview" src="https://github.com/user-attachments/assets/d507e4fc-3b55-4dc1-9fec-97525ccd0b7a" />
 
 - **Large Image Key** → The main image shown (usually album art or custom asset).  
 - **Large Image Text (Hover)** → Text shown when hovering over the large image. *(Note: not visible in all presence types)*  
@@ -81,15 +75,32 @@ Here’s an example for the **Listening** presence type:
 - **Small Image Text (Hover)** → Text shown when hovering over the small image.  
 - **Buttons** → Add up to two buttons (e.g. "View Track" / "My Profile").  
 
- **Important:**  
+**Important:**  
 - Some fields (like *Large Image Hover Text*) do not appear in certain presence types such as *Playing* or *Watching*.  
 - Configured buttons are **only visible to other people**, not to yourself in your own Discord client.
 
 ---
 
+###  Third-Party Components
+
+VibeBar uses third-party software:
+
+- **mediaremote-adapter** by ungive  
+  Licensed under the BSD 3-Clause License  
+
+- **loon** by ungive  
+  Used for optional dynamic album cover proxying  
+
+---
+
+###  License Notice
+
+This product includes software developed by **ungive**, licensed under the BSD 3-Clause License.  
+All rights and notices of the original authors are retained.
+
+---
 
 ###  Credits
 
-Built with using SwiftUI and AppKit.
-Special thanks to [ungive](https://github.com/ungive) for the original *loon* proxy. 
----
+Built using SwiftUI and AppKit.  
+Special thanks to **ungive** for *loon* and related tooling.
